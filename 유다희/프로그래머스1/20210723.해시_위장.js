@@ -19,5 +19,7 @@ function solution(clothes) {
     } 
     //모두 안입는경우 1이 존재 
         return answer - 1; 
+
+        //수정
     }
     
