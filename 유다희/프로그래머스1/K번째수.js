@@ -14,5 +14,5 @@ function solution(array, commands) {
     }
     return answer;
 
-    //commit 
+    //commit //dd//d/d/
 }
