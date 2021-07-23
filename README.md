@@ -8,8 +8,9 @@
 
 |Name|Github|Blog|
 |:---:|:---:|:---:|
-|유다희|[dahee](https://github.com/hyoogu "Github Link")|[beablessing](https://velog.io/@beablessing "Blog Link")|
-|이성훈|[seong-hoon](https://github.com/KAEN7 "Github Link")|[kaen](https://kaen7.github.io/ "Blog Link")|
+|유다희|[tkdkagody](https://github.com/tkdkagody "Github Link")|[beablessing](https://velog.io/@beablessing "Blog Link")|
+|이성훈|[kaen](https://github.com/KAEN7 "Github Link")|[kaen](https://kaen7.github.io/ "Blog Link")|
+|김재민|[jmean12](https://github.com/jmean12 "Github Link")|[jmean12](https://velog.io/@jmean12 "Blog Link")|
 
 
 <br/>
@@ -32,7 +33,8 @@
 <br/>
 
 ## 형식
-* 폴더명 `이름`  > `프로그래머스` <br>
+* 폴더명 `스터디원이름`  > `알고리즘주제` <br>
+(ex. 프로그래머스, 코플릿, 토이 Etc..)
 
 * 파일명 `YYYYMMDD.제목.js` <br>
 (ex. 20210723.네트워크js)
