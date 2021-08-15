@@ -4,6 +4,12 @@ function solution(n, lost, reserve) {
   // reserver === 여벌의 체육복을 가진 학생들의 번호가 담긴 배열
   // answer === 체육수업을 들을 수 있는 학생의 최대값
   let answer = n - lost.length;
+  // .solution(7, [2, 3, 4], [1, 2, 3, 6]); 중복 제거
+  // // 체육복을 잃어버렸으면서 여벌이 없는 경우
+  lost = lost.filter((element) => !reserve.includes(element));
+
+  // // 여벌이 있으면서 체육복을 잃어버리지 않은 경우
+  reserve = reserve.filter((element) => !lost.includes(element));
 
   for (let i = 0; i < lost.length; i++) {
     if (reserve.includes(lost[i] - 1)) {
@@ -50,18 +56,18 @@ solution(n, lost, reserve);
 //     for(let i=0; i<n; i++) {
 //         if(arr[i] === 0) { // 만약 체육복이 없는 애라면
 //             if(arr[i-1] === 2) { // 없는애 앞에가 여벌이 있다면
-//                 arr[i]++; // 체육복 빌림 ㅎㅎ
+//                 arr[i]++; // 체육복 빌림
 //                 arr[i-1]--; // 체육복 빌려줌
 //             }
 //             if(arr[i+1] === 2) { // 뒤에 있는애가 여벌이 있다면?
-//                 arr[i]++; // 체육볼 빌려버렸구여?
-//                 arr[i+1]--; // 빌려줘버렸어요
+//                 arr[i]++; // 체육볼 빌려
+//                 arr[i+1]--; // 빌려줘
 //             }
 //         }
 //     }
 //     for(let i=0; i<n; i++) {
-//         if(arr[i] >= 1) { // 체육복 있는 놈들 다 찾을거니깐 1보다 큰놈 옥땅으로 따라와
-//             answer++; // answer에 1씩 추가요~
+//         if(arr[i] >= 1) { // 체육복 있는 놈들 다 찾을거니깐 1보다 큰놈
+//             answer++; // answer에 1씩 추가
 //         }
 //     }
 //     return answer;
