@@ -14,6 +14,7 @@ function divideChocolateStick(M, N) {
     }
   }
   result.push([gcdNum, M / gcdNum, N / gcdNum]);
+  console.log(result);
   return result;
 }
 
@@ -26,7 +27,7 @@ let N = 8;
 let output = divideChocolateStick(M, N);
 console.log(output);
 
-// ! 레퍼런스
+// // ! 레퍼런스
 
 // function gcd(m, n) {
 //   if (m % n === 0) return n;
